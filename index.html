@@ -1,0 +1,2331 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lakshmi Plywood - Quality Plywood for Every Need</title>
+
+    <style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+
+```
+
+    body {
+
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+        line-height: 1.6;
+
+        color: #333;
+
+    }
+
+
+
+    .container {
+
+        max-width: 1280px;
+
+        margin: 0 auto;
+
+        padding: 0 1rem;
+
+    }
+
+
+
+    /* Header */
+
+    header {
+
+        background: white;
+
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+        position: sticky;
+
+        top: 0;
+
+        z-index: 1000;
+
+    }
+
+
+
+    .header-content {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        padding: 1rem 0;
+
+    }
+
+
+
+    .logo {
+
+        font-size: 1.75rem;
+
+        font-weight: bold;
+
+        color: #92400e;
+
+    }
+
+
+
+    nav {
+
+        display: flex;
+
+        gap: 2rem;
+
+    }
+
+
+
+    nav a {
+
+        color: #4b5563;
+
+        text-decoration: none;
+
+        transition: color 0.3s;
+
+        position: relative;
+
+    }
+
+
+
+    nav a:hover {
+
+        color: #92400e;
+
+    }
+
+
+
+    nav a.active {
+
+        color: #92400e;
+
+        font-weight: 600;
+
+    }
+
+
+
+    nav a.active::after {
+
+        content: '';
+
+        position: absolute;
+
+        bottom: -8px;
+
+        left: 0;
+
+        right: 0;
+
+        height: 3px;
+
+        background: #92400e;
+
+        border-radius: 2px;
+
+    }
+
+
+
+    .mobile-menu-btn {
+
+        display: none;
+
+        background: none;
+
+        border: none;
+
+        font-size: 1.5rem;
+
+        cursor: pointer;
+
+        color: #4b5563;
+
+    }
+
+
+
+    .mobile-nav {
+
+        display: none;
+
+        flex-direction: column;
+
+        padding-bottom: 1rem;
+
+    }
+
+
+
+    .mobile-nav a {
+
+        padding: 0.5rem 0;
+
+        color: #4b5563;
+
+        text-decoration: none;
+
+    }
+
+
+
+    .mobile-nav a.active {
+
+        color: #92400e;
+
+        font-weight: 600;
+
+    }
+
+
+
+    .mobile-nav.active {
+
+        display: flex;
+
+    }
+
+
+
+    /* Hero Section */
+
+    .hero {
+
+        background: linear-gradient(to right, #78350f, #92400e);
+
+        color: white;
+
+        padding: 5rem 0;
+
+    }
+
+
+
+    .hero-content {
+
+        max-width: 900px;
+
+    }
+
+
+
+    .hero h1 {
+
+        font-size: 3.5rem;
+
+        font-weight: bold;
+
+        margin-bottom: 1.5rem;
+
+        line-height: 1.2;
+
+    }
+
+
+
+    .hero p {
+
+        font-size: 1.125rem;
+
+        margin-bottom: 2rem;
+
+        color: #fef3c7;
+
+        line-height: 1.8;
+
+    }
+
+
+
+    .hero-buttons {
+
+        display: flex;
+
+        gap: 1rem;
+
+        flex-wrap: wrap;
+
+    }
+
+
+
+    .btn {
+
+        padding: 0.75rem 2rem;
+
+        border-radius: 0.5rem;
+
+        font-weight: 600;
+
+        text-decoration: none;
+
+        display: inline-block;
+
+        transition: all 0.3s;
+
+    }
+
+
+
+    .btn-primary {
+
+        background: white;
+
+        color: #92400e;
+
+    }
+
+
+
+    .btn-primary:hover {
+
+        background: #fef3c7;
+
+    }
+
+
+
+    .btn-secondary {
+
+        border: 2px solid white;
+
+        color: white;
+
+    }
+
+
+
+    .btn-secondary:hover {
+
+        background: white;
+
+        color: #92400e;
+
+    }
+
+
+
+    /* Video Section */
+
+    .video-section {
+
+        padding: 5rem 0;
+
+        background: white;
+
+    }
+
+
+
+    .videos-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+        gap: 2rem;
+
+        margin-top: 3rem;
+
+    }
+
+
+
+    .video-wrapper {
+
+        position: relative;
+
+        padding-bottom: 56.25%;
+
+        height: 0;
+
+        overflow: hidden;
+
+        border-radius: 0.5rem;
+
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    }
+
+
+
+    .video-wrapper iframe {
+
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        border: none;
+
+        border-radius: 0.5rem;
+
+    }
+
+
+
+    /* Gallery Section */
+
+    .gallery-section {
+
+        padding: 5rem 0;
+
+        background: #f9fafb;
+
+    }
+
+
+
+    .gallery-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+        gap: 1.5rem;
+
+        margin-top: 3rem;
+
+    }
+
+
+
+    .gallery-item {
+
+        position: relative;
+
+        overflow: hidden;
+
+        border-radius: 0.5rem;
+
+        cursor: pointer;
+
+        aspect-ratio: 4/3;
+
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    }
+
+
+
+    .gallery-item img {
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        transition: transform 0.3s ease;
+
+    }
+
+
+
+    .gallery-item:hover img {
+
+        transform: scale(1.1);
+
+    }
+
+
+
+    .gallery-overlay {
+
+        position: absolute;
+
+        bottom: 0;
+
+        left: 0;
+
+        right: 0;
+
+        background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+
+        padding: 1.5rem;
+
+        color: white;
+
+        transform: translateY(100%);
+
+        transition: transform 0.3s ease;
+
+    }
+
+
+
+    .gallery-item:hover .gallery-overlay {
+
+        transform: translateY(0);
+
+    }
+
+
+
+    .gallery-overlay h4 {
+
+        font-size: 1.125rem;
+
+        font-weight: 600;
+
+    }
+
+
+
+    /* Lightbox */
+
+    .lightbox {
+
+        display: none;
+
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        right: 0;
+
+        bottom: 0;
+
+        background: rgba(0,0,0,0.9);
+
+        z-index: 9999;
+
+        align-items: center;
+
+        justify-content: center;
+
+        padding: 2rem;
+
+    }
+
+
+
+    .lightbox.active {
+
+        display: flex;
+
+    }
+
+
+
+    .lightbox-content {
+
+        max-width: 90%;
+
+        max-height: 90%;
+
+        position: relative;
+
+    }
+
+
+
+    .lightbox-content img {
+
+        max-width: 100%;
+
+        max-height: 90vh;
+
+        object-fit: contain;
+
+        border-radius: 0.5rem;
+
+    }
+
+
+
+    .lightbox-close {
+
+        position: absolute;
+
+        top: -40px;
+
+        right: 0;
+
+        background: white;
+
+        color: #111827;
+
+        border: none;
+
+        width: 40px;
+
+        height: 40px;
+
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        font-size: 1.5rem;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        transition: all 0.3s;
+
+    }
+
+
+
+    .lightbox-close:hover {
+
+        background: #92400e;
+
+        color: white;
+
+    }
+
+
+
+    /* E-Brochures Section */
+
+    .ebrochures {
+
+        padding: 5rem 0;
+
+        background: white;
+
+    }
+
+
+
+    .brochures-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        gap: 2rem;
+
+        margin-top: 3rem;
+
+    }
+
+
+
+    .brochure-card {
+
+        background: #f9fafb;
+
+        border: 2px solid #e5e7eb;
+
+        border-radius: 0.5rem;
+
+        padding: 2rem;
+
+        transition: all 0.3s;
+
+        text-align: center;
+
+    }
+
+
+
+    .brochure-card:hover {
+
+        border-color: #92400e;
+
+        box-shadow: 0 10px 20px rgba(146, 64, 14, 0.1);
+
+        transform: translateY(-5px);
+
+    }
+
+
+
+    .brochure-icon {
+
+        width: 80px;
+
+        height: 80px;
+
+        background: linear-gradient(135deg, #92400e, #78350f);
+
+        color: white;
+
+        border-radius: 0.5rem;
+
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        margin-bottom: 1.5rem;
+
+        font-size: 2.5rem;
+
+    }
+
+
+
+    .brochure-card h3 {
+
+        font-size: 1.25rem;
+
+        font-weight: bold;
+
+        margin-bottom: 0.5rem;
+
+        color: #111827;
+
+    }
+
+
+
+    .brochure-card p {
+
+        color: #6b7280;
+
+        margin-bottom: 1.5rem;
+
+        font-size: 0.95rem;
+
+    }
+
+
+
+    .download-btn {
+
+        display: inline-flex;
+
+        align-items: center;
+
+        gap: 0.5rem;
+
+        background: #92400e;
+
+        color: white;
+
+        padding: 0.75rem 1.5rem;
+
+        border-radius: 0.5rem;
+
+        text-decoration: none;
+
+        font-weight: 600;
+
+        transition: all 0.3s;
+
+    }
+
+
+
+    .download-btn:hover {
+
+        background: #78350f;
+
+        transform: scale(1.05);
+
+    }
+
+
+
+    .download-btn::after {
+
+        content: "↓";
+
+        font-size: 1.25rem;
+
+    }
+
+
+
+    /* Features Bar */
+
+    .features-bar {
+
+        background: #fffbeb;
+
+        padding: 2rem 0;
+
+    }
+
+
+
+    .features-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+        gap: 1rem;
+
+        text-align: center;
+
+    }
+
+
+
+    .feature-item {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 0.5rem;
+
+        font-weight: 600;
+
+    }
+
+
+
+    .feature-item::before {
+
+        content: "→";
+
+        color: #92400e;
+
+        font-size: 1.2rem;
+
+    }
+
+
+
+    /* Products Section */
+
+    .products {
+
+        padding: 5rem 0;
+
+        background: white;
+
+    }
+
+
+
+    .section-header {
+
+        text-align: center;
+
+        margin-bottom: 3rem;
+
+    }
+
+
+
+    .section-header h2 {
+
+        font-size: 2.5rem;
+
+        font-weight: bold;
+
+        margin-bottom: 1rem;
+
+    }
+
+
+
+    .section-header p {
+
+        font-size: 1.25rem;
+
+        color: #6b7280;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+
+    }
+
+
+
+    .products-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+        gap: 1.5rem;
+
+    }
+
+
+
+    .product-card {
+
+        background: white;
+
+        border: 1px solid #e5e7eb;
+
+        border-radius: 0.5rem;
+
+        overflow: hidden;
+
+        transition: all 0.3s;
+
+    }
+
+
+
+    .product-card:hover {
+
+        box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+
+    }
+
+
+
+    .product-image {
+
+        width: 100%;
+
+        height: 200px;
+
+        object-fit: cover;
+
+        transition: transform 0.3s;
+
+    }
+
+
+
+    .product-card:hover .product-image {
+
+        transform: scale(1.1);
+
+    }
+
+
+
+    .product-info {
+
+        padding: 1.5rem;
+
+    }
+
+
+
+    .product-info h3 {
+
+        font-size: 1.25rem;
+
+        font-weight: bold;
+
+        margin-bottom: 0.5rem;
+
+    }
+
+
+
+    .product-info p {
+
+        color: #6b7280;
+
+    }
+
+
+
+    /* About Section */
+
+    .about {
+
+        padding: 5rem 0;
+
+        background: #f9fafb;
+
+    }
+
+
+
+    .about-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        gap: 3rem;
+
+        align-items: center;
+
+    }
+
+
+
+    .about-content h2 {
+
+        font-size: 2.5rem;
+
+        font-weight: bold;
+
+        margin-bottom: 1.5rem;
+
+    }
+
+
+
+    .about-content p {
+
+        font-size: 1.125rem;
+
+        color: #374151;
+
+        margin-bottom: 1rem;
+
+    }
+
+
+
+    .about-list {
+
+        list-style: none;
+
+        margin-top: 1.5rem;
+
+    }
+
+
+
+    .about-list li {
+
+        display: flex;
+
+        align-items: start;
+
+        margin-bottom: 0.75rem;
+
+        color: #374151;
+
+    }
+
+
+
+    .about-list li::before {
+
+        content: "→";
+
+        color: #92400e;
+
+        margin-right: 0.5rem;
+
+        flex-shrink: 0;
+
+    }
+
+
+
+    .about-image {
+
+        width: 100%;
+
+        height: 400px;
+
+        object-fit: cover;
+
+        border-radius: 0.5rem;
+
+    }
+
+
+
+    /* Contact Section */
+
+    .contact {
+
+        padding: 5rem 0;
+
+        background: white;
+
+    }
+
+
+
+    .contact-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        gap: 2rem;
+
+        margin-top: 3rem;
+
+    }
+
+
+
+    .contact-card {
+
+        text-align: center;
+
+        padding: 2rem;
+
+        background: #fffbeb;
+
+        border-radius: 0.5rem;
+
+    }
+
+
+
+    .contact-icon {
+
+        width: 64px;
+
+        height: 64px;
+
+        background: #92400e;
+
+        color: white;
+
+        border-radius: 50%;
+
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        margin-bottom: 1rem;
+
+        font-size: 1.75rem;
+
+    }
+
+
+
+    .contact-card h3 {
+
+        font-size: 1.25rem;
+
+        font-weight: bold;
+
+        margin-bottom: 0.5rem;
+
+    }
+
+
+
+    .contact-card p {
+
+        color: #374151;
+
+    }
+
+
+
+    /* Footer */
+
+    footer {
+
+        background: #111827;
+
+        color: white;
+
+        padding: 3rem 0;
+
+    }
+
+
+
+    .footer-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+        gap: 2rem;
+
+        margin-bottom: 2rem;
+
+    }
+
+
+
+    .footer-section h3, .footer-section h4 {
+
+        margin-bottom: 1rem;
+
+    }
+
+
+
+    .footer-section p, .footer-section li {
+
+        color: #9ca3af;
+
+        line-height: 1.8;
+
+    }
+
+
+
+    .footer-section ul {
+
+        list-style: none;
+
+    }
+
+
+
+    .footer-section a {
+
+        color: #9ca3af;
+
+        text-decoration: none;
+
+        transition: color 0.3s;
+
+    }
+
+
+
+    .footer-section a:hover {
+
+        color: white;
+
+    }
+
+
+
+    .footer-bottom {
+
+        border-top: 1px solid #374151;
+
+        padding-top: 2rem;
+
+        text-align: center;
+
+        color: #9ca3af;
+
+    }
+
+
+
+    /* Smooth scroll */
+
+    html {
+
+        scroll-behavior: smooth;
+
+    }
+
+
+
+    /* Section transitions */
+
+    section {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+
+
+    /* Responsive */
+
+    @media (max-width: 768px) {
+
+        .mobile-menu-btn {
+
+            display: block;
+
+        }
+
+
+
+        nav {
+
+            display: none;
+
+        }
+
+
+
+        .hero h1 {
+
+            font-size: 2rem;
+
+        }
+
+
+
+        .hero p {
+
+            font-size: 1rem;
+
+        }
+
+
+
+        .section-header h2 {
+
+            font-size: 2rem;
+
+        }
+
+
+
+        .about-content h2 {
+
+            font-size: 2rem;
+
+        }
+
+    }
+
+</style>
+
+```
+
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="header-content">
+
+                <div class="logo">Lakshmi Plywood</div>
+
+
+
+```
+
+            <nav>
+
+                <a href="#home">Home</a>
+
+                <a href="#products">Products</a>
+
+                <a href="#ebrochures">E-Brochures</a>
+
+                <a href="#about">About</a>
+
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+
+        </div>
+
+        
+
+        <div class="mobile-nav" id="mobileNav">
+
+            <a href="#home">Home</a>
+
+            <a href="#products">Products</a>
+
+            <a href="#ebrochures">E-Brochures</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- Hero Section -->
+
+<section id="home" class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <h1>Premium Plywood & Laminates for Every Need</h1>
+
+            <p>Your trusted dealer offering high quality plywood and laminate solutions for interior applications. With an extensive product range from leading brands, expert guidance, and a commitment to quality, Lakshmi Plywood ensures all products carry the mark of excellence in terms of application-readiness, strength, durability and elegance.</p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="btn btn-primary">View Products →</a>
+
+                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Features Bar -->
+
+<section class="features-bar">
+
+    <div class="container">
+
+        <div class="features-grid">
+
+            <div class="feature-item">Authorized Dealer</div>
+
+            <div class="feature-item">Premium Brands</div>
+
+            <div class="feature-item">Expert Consultation</div>
+
+            <div class="feature-item">Quick Delivery</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Video Section -->
+
+<section class="video-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>Watch Our Videos</h2>
+
+            <p>Explore our product range and showroom</p>
+
+        </div>
+
+
+
+        <div class="videos-grid">
+
+            <div class="video-wrapper">
+
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="video-wrapper">
+
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="video-wrapper">
+
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Gallery Section -->
+
+<section class="gallery-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>Our Gallery</h2>
+
+            <p>Take a look at our showroom and product range</p>
+
+        </div>
+
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item" onclick="openLightbox(this)">
+
+                <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=600&h=400&fit=crop" alt="Showroom">
+
+                <div class="gallery-overlay">
+
+                    <h4>Our Showroom</h4>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(this)">
+
+                <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&h=400&fit=crop" alt="Plywood Display">
+
+                <div class="gallery-overlay">
+
+                    <h4>Plywood Display</h4>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(this)">
+
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&h=400&fit=crop" alt="Laminates">
+
+                <div class="gallery-overlay">
+
+                    <h4>Laminate Collection</h4>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(this)">
+
+                <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&h=400&fit=crop" alt="Store Interior">
+
+                <div class="gallery-overlay">
+
+                    <h4>Store Interior</h4>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(this)">
+
+                <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&h=400&fit=crop" alt="Product Range">
+
+                <div class="gallery-overlay">
+
+                    <h4>Product Range</h4>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(this)">
+
+                <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&h=400&fit=crop" alt="Premium Brands">
+
+                <div class="gallery-overlay">
+
+                    <h4>Premium Brands</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Lightbox -->
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+
+        <button class="lightbox-close" onclick="closeLightbox()">×</button>
+
+        <img id="lightbox-img" src="" alt="Gallery Image">
+
+    </div>
+
+</div>
+
+
+
+<!-- E-Brochures Section -->
+
+<section id="ebrochures" class="ebrochures">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>E-Brochures</h2>
+
+            <p>Download our product catalogs and brochures</p>
+
+        </div>
+
+
+
+        <div class="brochures-grid">
+
+            <div class="brochure-card">
+
+                <div class="brochure-icon">📄</div>
+
+                <h3>Plywood Catalog</h3>
+
+                <p>Complete range of commercial, marine, and BWR/BWP plywood</p>
+
+                <a href="#" class="download-btn" onclick="alert('Add your PDF link here'); return false;">Download PDF</a>
+
+            </div>
+
+
+
+            <div class="brochure-card">
+
+                <div class="brochure-icon">📋</div>
+
+                <h3>Laminate - KLAM</h3>
+
+                <p>Explore our premium KLAM decorative laminate collection</p>
+
+                <a href="#" class="download-btn" onclick="alert('Add your PDF link here'); return false;">Download PDF</a>
+
+            </div>
+
+
+
+            <div class="brochure-card">
+
+                <div class="brochure-icon">📑</div>
+
+                <h3>Veneers Catalog</h3>
+
+                <p>Natural wood veneers in various finishes and patterns</p>
+
+                <a href="#" class="download-btn" onclick="alert('Add your PDF link here'); return false;">Download PDF</a>
+
+            </div>
+
+
+
+            <div class="brochure-card">
+
+                <div class="brochure-icon">📘</div>
+
+                <h3>MDF & Particle Board</h3>
+
+                <p>Medium Density Fiberboard and Particle Board specifications</p>
+
+                <a href="#" class="download-btn" onclick="alert('Add your PDF link here'); return false;">Download PDF</a>
+
+            </div>
+
+
+
+            <div class="brochure-card">
+
+                <div class="brochure-icon">📗</div>
+
+                <h3>PVC Products</h3>
+
+                <p>PVC boards and solutions for modern interiors</p>
+
+                <a href="#" class="download-btn" onclick="alert('Add your PDF link here'); return false;">Download PDF</a>
+
+            </div>
+
+
+
+            <div class="brochure-card">
+
+                <div class="brochure-icon">📙</div>
+
+                <h3>WPC Products</h3>
+
+                <p>WPC boards, frames, and doors - complete catalog</p>
+
+                <a href="#" class="download-btn" onclick="alert('Add your PDF link here'); return false;">Download PDF</a>
+
+            </div>
+
+
+
+            <div class="brochure-card">
+
+                <div class="brochure-icon">📕</div>
+
+                <h3>Complete Product Guide</h3>
+
+                <p>All products and specifications in one comprehensive guide</p>
+
+                <a href="#" class="download-btn" onclick="alert('Add your PDF link here'); return false;">Download PDF</a>
+
+            </div>
+
+
+
+            <div class="brochure-card">
+
+                <div class="brochure-icon">📖</div>
+
+                <h3>Price List 2025</h3>
+
+                <p>Current pricing for all products and materials</p>
+
+                <a href="#" class="download-btn" onclick="alert('Add your PDF link here'); return false;">Download PDF</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Products Section -->
+
+<section id="products" class="products">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>Our Products</h2>
+
+            <p>Comprehensive range of plywood and laminate solutions for all your interior needs</p>
+
+        </div>
+
+
+
+        <div class="products-grid">
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=400&h=300&fit=crop" alt="Commercial Plywood" class="product-image">
+
+                <div class="product-info">
+
+                    <h3>Commercial Plywood</h3>
+
+                    <p>High-quality plywood from premium brands for commercial applications</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=400&h=300&fit=crop" alt="Marine Plywood" class="product-image">
+
+                <div class="product-info">
+
+                    <h3>Marine Plywood</h3>
+
+                    <p>Water-resistant plywood perfect for marine and moisture-prone areas</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400&h=300&fit=crop" alt="Laminate KLAM" class="product-image">
+
+                <div class="product-info">
+
+                    <h3>Laminate - KLAM</h3>
+
+                    <p>Premium decorative laminates with stunning finishes and durability</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=400&h=300&fit=crop" alt="BWR/BWP Plywood" class="product-image">
+
+                <div class="product-info">
+
+                    <h3>BWR/BWP Plywood</h3>
+
+                    <p>Boiling water resistant plywood ideal for kitchens and bathrooms</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&h=300&fit=crop" alt="Veneers" class="product-image">
+
+                <div class="product-info">
+
+                    <h3>Veneers</h3>
+
+                    <p>Natural wood veneers for elegant and authentic wood finishes</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=400&h=300&fit=crop" alt="MDF" class="product-image">
+
+                <div class="product-info">
+
+                    <h3>MDF</h3>
+
+                    <p>Medium Density Fiberboard for furniture and interior applications</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Particle Board" class="product-image">
+
+                <div class="product-info">
+
+                    <h3>Particle Board</h3>
+
+                    <p>Economical and versatile boards for various construction needs</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop" alt="PVC Board" class="product-image">
+
+                <div class="product-info">
+
+                    <h3>PVC Board</h3>
+
+                    <p>Waterproof and durable PVC boards for modern interiors</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop" alt="WPC Board" class="product-image">
+
+                <div class="product-info">
+
+                    <h3>WPC Board</h3>
+
+                    <p>Wood Plastic Composite boards - eco-friendly and moisture resistant</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&h=300&fit=crop" alt="WPC Frame" class="product-image">
+
+                <div class="product-info">
+
+                    <h3>WPC Frame</h3>
+
+                    <p>Sturdy WPC frames for door and partition applications</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=400&h=300&fit=crop" alt="WPC Door" class="product-image">
+
+                <div class="product-info">
+
+                    <h3>WPC Door</h3>
+
+                    <p>Complete WPC door solutions - durable, termite-proof and stylish</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=400&h=300&fit=crop" alt="PVC & WPC" class="product-image">
+
+                <div class="product-info">
+
+                    <h3>PVC & WPC Solutions</h3>
+
+                    <p>Complete range of PVC and WPC products for all your needs</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- About Section -->
+
+<section id="about" class="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-content">
+
+                <h2>About Lakshmi Plywood</h2>
+
+                <p>Lakshmi Plywood is your trusted dealer for premium quality plywood and laminates, committed to delivering top-tier products from leading brands that meet international standards.</p>
+
+                <p>With years of experience in the industry, we offer expert consultation and a wide range of products to ensure you find the perfect solution for your interior design needs.</p>
+
+                <ul class="about-list">
+
+                    <li>Authorized dealer for premium brands</li>
+
+                    <li>Wide range of plywood and laminates</li>
+
+                    <li>Expert guidance and consultation</li>
+
+                    <li>Competitive pricing and quick delivery</li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&h=400&fit=crop" alt="Showroom" class="about-image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Contact Section -->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>Get in Touch</h2>
+
+            <p>We're here to help with all your plywood needs</p>
+
+        </div>
+
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <div class="contact-icon">📞</div>
+
+                <h3>Call Us</h3>
+
+                <p>+91 XXX XXX XXXX</p>
+
+                <p>+91 XXX XXX XXXX</p>
+
+            </div>
+
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">✉️</div>
+
+                <h3>Email Us</h3>
+
+                <p>info@lakshmiplywood.com</p>
+
+                <p>sales@lakshmiplywood.com</p>
+
+            </div>
+
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">📍</div>
+
+                <h3>Visit Us</h3>
+
+                <p>Industrial Area</p>
+
+                <p>Your City, State - PIN</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Footer -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-section">
+
+                <h3>Lakshmi Plywood</h3>
+
+                <p>Your trusted dealer for premium quality plywood and laminate solutions.</p>
+
+            </div>
+
+            
+
+            <div class="footer-section">
+
+                <h4>Quick Links</h4>
+
+                <ul>
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#products">Products</a></li>
+
+                    <li><a href="#ebrochures">E-Brochures</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            
+
+            <div class="footer-section">
+
+                <h4>Products</h4>
+
+                <ul>
+
+                    <li>Commercial Plywood</li>
+
+                    <li>Marine Plywood</li>
+
+                    <li>Laminate - KLAM</li>
+
+                    <li>Veneers</li>
+
+                    <li>MDF & Particle Board</li>
+
+                    <li>PVC & WPC Products</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        
+
+        <div class="footer-bottom">
+
+            <p>&copy; 2025 Lakshmi Plywood. All rights reserved.</p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script>
+
+    // Mobile menu toggle
+
+    function toggleMobileMenu() {
+
+        const mobileNav = document.getElementById('mobileNav');
+
+        mobileNav.classList.toggle('active');
+
+    }
+
+
+
+    // Close mobile menu when clicking outside
+
+    document.addEventListener('click', function(event) {
+
+        const mobileNav = document.getElementById('mobileNav');
+
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+
+        
+
+        if (!mobileNav.contains(event.target) && !menuBtn.contains(event.target)) {
+
+            mobileNav.classList.remove('active');
+
+        }
+
+    });
+
+
+
+    // Active navigation highlighting
+
+    function setActiveNav() {
+
+        const sections = document.querySelectorAll('section[id]');
+
+        const navLinks = document.querySelectorAll('nav a, .mobile-nav a');
+
+        
+
+        let currentSection = '';
+
+        
+
+        sections.forEach(section => {
+
+            const sectionTop = section.offsetTop;
+
+            const sectionHeight = section.clientHeight;
+
+            
+
+            if (window.scrollY >= sectionTop - 100) {
+
+                currentSection = section.getAttribute('id');
+
+            }
+
+        });
+
+        
+
+        navLinks.forEach(link => {
+
+            link.classList.remove('active');
+
+            if (link.getAttribute('href') === `#${currentSection}`) {
+
+                link.classList.add('active');
+
+            }
+
+        });
+
+    }
+
+
+
+    // Smooth scroll with animation
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+        anchor.addEventListener('click', function(e) {
+
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+
+            
+
+            if (target) {
+
+                const headerOffset = 80;
+
+                const elementPosition = target.offsetTop;
+
+                const offsetPosition = elementPosition - headerOffset;
+
+                
+
+                window.scrollTo({
+
+                    top: offsetPosition,
+
+                    behavior: 'smooth'
+
+                });
+
+                
+
+                // Close mobile menu after clicking
+
+                const mobileNav = document.getElementById('mobileNav');
+
+                mobileNav.classList.remove('active');
+
+            }
+
+        });
+
+    });
+
+
+
+    // Set initial active nav
+
+    window.addEventListener('load', function() {
+
+        setActiveNav();
+
+    });
+
+
+
+    // Update active nav on scroll
+
+    window.addEventListener('scroll', setActiveNav);
+
+
+
+    // Gallery Lightbox Functions
+
+    function openLightbox(element) {
+
+        const img = element.querySelector('img');
+
+        const lightbox = document.getElementById('lightbox');
+
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        
+
+        lightboxImg.src = img.src;
+
+        lightboxImg.alt = img.alt;
+
+        lightbox.classList.add('active');
+
+        document.body.style.overflow = 'hidden';
+
+    }
+
+
+
+    function closeLightbox() {
+
+        const lightbox = document.getElementById('lightbox');
+
+        lightbox.classList.remove('active');
+
+        document.body.style.overflow = 'auto';
+
+    }
+
+
+
+    // Close lightbox with Escape key
+
+    document.addEventListener('keydown', function(e) {
+
+        if (e.key === 'Escape') {
+
+            closeLightbox();
+
+        }
+
+    });
+
+</script>
+
+```
+
+
+
+</body>
+
+</html>
